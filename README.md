@@ -4,7 +4,7 @@ This repo contains patterns from Kent Beck's book *Smalltalk Best Practice Patte
 
 ## Behavior
 
-> Objects model the world through behavior and state. Behavior is the dynamic, active, computational part of the model. State is what is left after behavior is done, how the model is represented before, after, and during a computation. Of the two, behavior is the more important to get right. 
+> Objects model the world through behavior and state. Behavior is the dynamic, active, computational part of the model. State is what is left after behavior is done, how the model is represented before, after, and during a computation. Of the two, behavior is the more important to get right. The primacy of behavior is one of the odd truths of objects; odd because it flies in the face of so much accumulated experience. Back in the bad old days, you wanted to get the representation right as quickly as possible because every change to the representation bred changes in many different computations. Objects (done right) change all that. No longer is your system a slave of its representation. Because objects can hide their representation behind a wall of messages, you are free to change representation and only affect one object.
 
 Beck, Kent. Smalltalk Best Practice Patterns (19)
 
