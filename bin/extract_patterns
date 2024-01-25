@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require_relative 'pattern_extractor'
+require_relative 'markdown_formatter'
+
+extractor = PatternExtractor.new
+patterns = extractor.extract_patterns
+
+markdown_formatter = MarkdownFormatter.new(patterns)
+markdown_table = markdown_formatter.to_table
+
+File.write('../README.md', markdown_table, mode: 'a+')
+
